@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../Css%20File/cal_standard.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+</head>
+<body>
+<script src="../Java%20Script%20File/cal_standard.js"></script>
+<!--Header Area-->
+<header>
+
+    <h2><i class="fa fa-calculator" style="margin-right: 10px;"></i>Calculator</h2>
+
+</header>
+
+<!--Display Area-->
+<div id="display_area">
+    <h1 id="display_area_number"></h1>
+</div>
+
+
+
+<!--Num Pad Area-->
+<table width="100%">
+
+    <tr>
+        <td><button value="9" id="btn_9" onclick="btn_9()"><b>9</b></button></td>
+        <td><button value="8" id="btn_8" onclick="btn_8()"><b>8</b></button></td>
+        <td><button value="7" id="btn_7" onclick="btn_7()"><b>7</b></button></td>
+        <td><button value="+" class="btn_aritmetic" onclick="btn_add()"><b>+</b></button></td>
+        <td><button value="-" class="btn_aritmetic" onclick="btn_subtract()"><b>-</b></button></td>
+
+    </tr>
+
+    <tr>
+        <td><button value="6" id="btn_6" onclick="btn_6()"><b>6</b></button></td>
+        <td><button value="5" id="btn_5" onclick="btn_5()"><b>5</b></button></td>
+        <td><button value="4" id="btn_4" onclick="btn_4()"><b>4</b></button></td>
+        <td><button value="*" class="btn_aritmetic" onclick="btn_multiply()"><b>x</b></button></td>
+        <td><button value="/" class="btn_aritmetic" onclick="btn_divide()"><b>/</b></button></td>
+
+    </tr>
+
+    <tr>
+        <td><button value="3" id="btn_3" onclick="btn_3()"><b>3</b></button></td>
+        <td><button value="2" id="btn_2" onclick="btn_2()"><b>2</b></button></td>
+        <td><button value="1" id="btn_1" onclick="btn_1()"><b>1</b></button></td>
+        <td rowspan="2" colspan="2"><button style="height: 200px" value="=" class="btn_aritmetic" onclick="btn_equalTo()"><b>=</b></button></td>
+
+
+
+    </tr>
+
+    <tr>
+        <td><button value="clear" onclick="btn_clear()"><b>C</b></button></td>
+        <td><button value="0" id="btn_0" onclick="btn_0()"><b>0</b></button></td>
+        <td><button value="." id="btn_dot" onclick="btn_dot()"><b>.</b></button></td>
+    </tr>
+</table>
+
+</body>
+</html>
